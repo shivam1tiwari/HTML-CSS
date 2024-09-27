@@ -1,0 +1,33 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: gray;
+}
+.contaner{
+  width: 500px;
+  margin: 100px auto;
+  text-align: center;
+  background-color: gray;
+  padding: 20px;
+
+}
+
+.card {
+  padding: 10px;
+  margin: 10px auto;
+  background-color: white;
+  text-align: left;
+  border-radius: 10px;
+  background-image: url('./images/sporty.png');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.sh1 h1{
+  color: red;
+}
+.sh2 h1{
+  color: blue;
+}
+.sh3 h1{
+  color: rgb(83, 36, 36);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        container-type: inline-size;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 200px;
+        background-color: gray;
+        
+    }
+    .card{
+        margin: 20px auto;
+        width: 200px;
+        background-color: aqua;
+    }
+    .card-1{
+        width: 100cqw;
+    }
+    
+@container (max-width: 800px){
+        .card-1{
+            width: 50cqw;
+        }
+    }
+
+</style>
+<body>
+    <div class="main">
+        <div class="card card-1">this s card  </div>
+        <div class="card">this s  gge </div>
+        <div class="card">this iis gf  to </div>
+    </div>
+</body>
+</html>
