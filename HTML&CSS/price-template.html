@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(28, 28, 121);
+        margin: 40px;
+        margin-left: 200px;
+        margin-right: 200px;
+        padding: 20px;
+    }
+    .warapper{
+        display: flex;
+        margin: 50px auto;
+        padding: 150px;
+        gap: 10px;
+        justify-content: center;
+        background-color: rgb(252, 247, 247);
+        
+    }
+    .card{
+        text-align: center;
+        background-color: rgb(244, 249, 253);
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 2px 4px 2px 2px rgb(214, 211, 211);
+    }
+    .card-1 .top{
+      background-color: rgb(233, 232, 232);
+      padding:1px 0px;
+      margin: 10px;
+    }
+    .card-2 .top{
+      background-color: rgb(190, 142, 234);
+      padding: 1px;
+      margin: 10px;
+      background: linear-gradient(to right,rgb(186, 186, 236),rgb(121, 121, 227));
+    }
+    .card-3 .top{
+        background: linear-gradient(to right, rgba(234, 161, 161, 0.897),rgb(231, 177, 77) );
+
+      padding: 1px;
+      margin: 10px;
+    }
+    .card button{
+        width: 90%;
+        padding: 15px;
+        cursor: pointer;
+    }
+    .card-2 button{
+        background-color:rgb(57, 38, 38) ;
+        color: white;
+    }
+    ul{
+        text-align: left;
+        list-style-type: none;
+    }
+    span{
+        margin-left: -30px;
+        padding: 10px;
+        color: green;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .card-1 ul .g {
+        color: red;
+    }
+</style>
+<body>
+    <main>
+        <div class="warapper">
+            <div class="card card-1">
+              <div class="top">
+                <h4>FREE</h4>
+              </div>  
+              <h3><sup>$</sup>0 <sub>/mo</sub></h3>
+              <p>GREAT FOR STARTERS</p>
+              <p>Discover how to create your first projects</p>
+              <button>GET STARTED</button>
+              <UL>
+                <LI><span >&#10003;</span>3 new projects / month</LI>
+                <LI><span class="g">&#10539;</span>Basic interaction</LI>
+                <LI><span class="g">&#10539;</span>Assets library</LI>
+            </UL>
+            </div>
+            <div class="card card-2">
+                <div class="top">
+                    <h4>LITE</h4>
+                  </div>  
+                  <h3><sup>$</sup>7<sub>/mo</sub></h3>
+                  <p>FOR PLANNED PROJECTS </p>
+                  <p>Bring your designs to the next level and export them</p>
+                  <button>GET STARTED</button>
+                  <UL>
+                    <LI>
+                        <span>&#10003;</span>3 new projects / month</LI>
+                    <LI><span>&#10003;</span>Basic interaction</LI>
+                    <LI><span>&#10003;</span>Assets library</LI>
+                </UL>
+            </div>
+            <div class="card card-3"> 
+                <div class="top">
+                    <h4>PRO</h4>
+                  </div>  
+                  <h3><sup>$</sup>12 <sub>/mo</sub></h3>
+                  <p>FOR PROFESSIONAL</p>
+                  <p>Enjoy limitless use with interactive export options</p>
+                  <button>GET STARTED</button>
+                  <UL>
+                    <LI>
+                        <span>&#10003;</span>3 new projects / month</LI>
+                    <LI><span>&#10003;</span>Basic interaction</LI>
+                    <LI><span>&#10003;</span>Assets library</LI>
+                </UL>
+                 </div>
+        </div>
+    </main>
+</body>
+</html>
