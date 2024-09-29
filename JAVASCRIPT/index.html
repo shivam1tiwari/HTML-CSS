@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Variables</h1>
+    <label for="var">let x = </label>
+    <input id="var" placeholder="Enter the value" type="number"></input>
+    <button class="description" onclick= "description()" >Check Description</button>
+    <p class="details"></p>
+    <script>
+        function description() {
+            const input = document.querySelector('#var');
+            const detailsTab = document.querySelector('.details')
+            const inputValue = input.value;
+            detailsTab.innerHTML = `X is a variable and ${inputValue} is value !`
+            
+        }
+     
+    </script>
+</body>
+</html>
