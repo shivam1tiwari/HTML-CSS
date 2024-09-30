@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array-Details</title>
+</head>
+<body>
+    <h1>Array and array methods</h1>
+    
+</body>
+<script>
+    // Check weather given object is Array or not 
+    const arr = [5,2,3];
+    console.log((Array.isArray(arr)));
+    console.log((arr instanceof Array));
+    // how can i traverse in arrays
+    // via for loop
+    for(let i = 0; i < arr.length; i++){
+        console.log(arr[i])
+    }
+    // via for -of loop
+    for(let i of arr){
+        console.log(i)
+    }
+    //  via while loop
+    let y = 0;
+    while(arr.length > y){
+        console.log(arr[y])
+        y++;
+    }
+    // if i want to access only index i can use for in loop
+    for(let i in arr){
+        console.log(i)
+    }
+
+    // take some part of array using slice method
+   console.log(arr.slice(1,2))
+    //   array to string 
+    console.log(arr.toString())
+    // use at 
+     
+    console.log(arr.at(-3))
+    // use of splice it return deleted element in form of array and modify existing array
+
+    const arr1 = ["apple", "banana", "mango"]
+    len = arr1.length-1
+    while( len>= 0){
+       h =  arr1.splice(0,1)
+       console.log("deleted " , h)
+        console.log(arr1)
+        console.log("array get empty")
+       len--;
+    }
+    
+    // copy array elements
+    console.log(arr.copyWithin(2,0))
+    // console.log(arr)
+
+    // flat an array
+
+    const withoutFlat = [1,2,[3,5,6,[11,12]],4,[6,9,[10]]]
+    console.log(withoutFlat.flat())
+
+    // searching a element in array
+
+    //   indexof method
+    console.log(arr)
+    console.log(arr.indexOf(5))
+
+    const stringArray = ["A","C","B"]
+    console.log(stringArray.sort())
+
+    console.log( 4 & 1 )
+
+
+
+
+
+
+
+
+</script>
+</html>
