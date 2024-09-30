@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //    This a string data type 
+       let myName = "shivam";
+       //    This a Array data type
+         console.log(myName);
+        const array = []; 
+        //  this is boolean data it is in true or false
+        const bool = true;
+        // This is undefined Data type
+        const undefinedData = undefined;
+        //  This is null Data Type;
+        const nullType  = null;
+        // This is bigint 
+        const bigIntNumber = 24n;
+         console.log(typeof bigIntNumber)
+        // This is bigint  
+        const int = 23;
+         console.log(typeof int) ;
+        // This is symbol 
+        const symbol1 = Symbol("name") ;
+         console.log(typeof symbol1)
+        // This is bigint 
+        const obj = {
+            name : "shivam",
+            location : "Noida"
+        } 
+
+        console.log(typeof obj);
+        
+         
+         
+
+
+        // check how object assining works its changed key into string "[object Object]"
+        let x= {}, y = {name:"Ronny"},z = {name:"John"},l={name:"rahul"},m={};
+            // x[y] = {name:"Vivek"};
+            // console.log(x[y])
+            // x[z] = {name:"Akki"};
+            // console.log(x)
+            // console.log(x[z])
+            // console.log(x[y]);
+            x[l]={name:"shivam"}
+            console.log(x[l])
+            console.log(x["[object Object]"])
+            x[m]={name:"raja"}
+            console.log(x[l])
+            console.log(x["[object Object]"])
+                </script>
+</body>
+</html>
+
+
