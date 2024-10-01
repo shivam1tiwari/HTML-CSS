@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function</h1>
+    <script>
+     /**
+ * Returns x raised to the n-th power.
+ *
+ * @param {number} x The number to raise.
+ * @param {number} n The power, must be a natural number.
+ * @return {number} x raised to the n-th power.
+ */
+function pow(x, n) {
+  
+}   
+      function showMessage(from,text = "no text given"){
+        console.log(from , text)
+      }
+      showMessage("raja",undefined)
+
+      function anotherFunction(){
+        return "function"
+      }
+
+      function showMessageWithFunPara(from,text = anotherFunction()){
+        console.log(from , text)
+      }
+      showMessageWithFunPara("raja")
+
+      function arrowFunc(x){
+        console.log(arguments[0]);
+      };
+      arrowFunc(5)
+
+      const arrowFuncNotHaveArguments = (...x) => {
+        console.log(x[0]);
+      };
+      arrowFuncNotHaveArguments(6);
+
+    //   IIFE FUNCTION 
+
+     (function(){
+        console.log("this is ")
+    })();
+
+    // Generator Function
+
+    function* gene() {
+        yield "myname"
+    }
+    const generator = gene();
+    console.log(generator.next())
+    console.log(generator.next())
+
+    let myPromise = new Promise((resolve, reject) => {
+    // Asynchronous operation
+    setTimeout(()=>resolve("shivam"),3000)
+          // Call resolve with the result
+    } 
+);
+     function PrintName(){
+        return "shivam"
+     }
+    async function checkAsync() {
+      const val = await myPromise
+      console.log(val)
+      console.log("raju")
+    }
+    checkAsync()
+    </script>
+</body>
+</html>
+

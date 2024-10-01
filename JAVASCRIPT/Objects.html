@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+        const obj1 = {
+            name : "shivam",
+            lname : "tiwari"
+        }
+        const obj2 = {
+            location:"noida"
+        }
+        const user = {};
+        Object.assign(user,obj1,obj2)
+        console.log(user)
+
+        obj1.name = "jaunpur"
+        console.log(obj2)
+
+        console.log(null == 0)
+    </script>
+</body>
+</html>
